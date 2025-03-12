@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+  <title>Dom-jan-ken</title>
+<linK rel="stylesheet" href="style/jan-ken.css"> 
+</head>
+<body>
+  <p class="title">Rock Paper Scissors</p>
+  <button class="move-button js-rock-button" ><img src="images/rock-emoji.png" class="move-icon"></button>
+
+<button class="move-button js-paper-button">
+<img src="images/paper-emoji.png" class="move-icon"></button>
+  <button class="move-button js-scissors-button">
+  <img src="images/scissors-emoji.png" class="move-icon"></button> 
+
+<p class="js-result result"></p>
+<p class="js-moves moves-button"></p>
+<p class="js-score"></p>  
+  
+<button onclick="
+   score.wins = 0;
+   score.losses = 0;
+   score.ties = 0;
+   localStorage.removeItem('score');
+   scoreIndicator();
+" class="reset-button">
+Reset Score 
+</button>
+<button class="autoplay" onclick="
+  AutoPlay();
+
+">Auto Play</button>  
+                  
+<script src="script/jan-ken.js"></script>
+</body>
+</html>
